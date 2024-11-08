@@ -1,0 +1,585 @@
+/* =============Common Style  start================= */
+.developer-section-title {
+    color: #262626;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .developer-body-color {
+    background: #ffffff;
+  }
+  .d-cart-btn {
+    border: none;
+    outline: none;
+    background: transparent;
+    background: #ffffff;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #f47118;
+    color: #f47118;
+    font-size: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .Godrej-Projects-section {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  #more {
+    display: none;
+  }
+  #myBtn {
+    font-weight: 600;
+    cursor: pointer;
+  }
+  /* modal contact css */
+  
+  .position-form {
+    /* display: block; */
+    position: sticky;
+    top: 160px;
+    z-index: 1;
+  }
+  
+  .e-form-container {
+    position: relative;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px #0000000d;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+    padding: 16px 8px;
+    background-color: #fff;
+    margin: 10% auto;
+    width: 80%;
+  }
+  .e-form-heading {
+    color: #212529;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+  }
+  .e-form-media {
+    display: flex;
+    align-items: center;
+    background: #f2dac95c !important;
+    border-radius: 8px;
+    padding: 8px 12px;
+    gap: 10px;
+  }
+  
+  .e-form-img {
+    border: 1px solid #e6e6e6;
+    border-radius: 50%;
+    max-height: 46px;
+    max-width: 46px;
+    object-fit: contain;
+  }
+  .e-logo-title {
+    color: #212529;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 2px;
+  }
+  .e-logo-subtext {
+    color: #212529;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+  .group {
+    margin: 10px 0;
+    position: relative;
+  }
+  
+  .group label {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    color: #cfcfcf;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+  
+  .e-input {
+    width: 100%;
+    border: none;
+    padding: 20px 10px 5px 5px;
+    border-bottom: 1px solid #cfcfcf;
+    background: transparent;
+    color: #212529;
+    font-size: 14px;
+  }
+  
+  .e-input:focus {
+    outline: none;
+    border-bottom: 1px solid #f47926;
+  }
+  
+  .e-input:focus ~ label {
+    bottom: 25px;
+    font-size: 12px;
+  }
+  .checkbox-label {
+    color: #212529;
+    font-size: 11px;
+    line-height: 2;
+  }
+  .e-contact-btn {
+    width: 100%;
+    background: linear-gradient(277.68deg, #f47118 47.78%, #ff9e03 136.26%);
+    border: transparent;
+    border-radius: 8px;
+    box-shadow: inset 0 -1px 2px #0000001a;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20.16px;
+    margin-bottom: 16px;
+    margin-top: 8px;
+    padding: 16px;
+  }
+  .e-copy {
+    color: #212529cc;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 12px;
+    padding: 0 5px;
+    text-align: center;
+  }
+  .enquirycheckbox_name {
+    font-size: 11px;
+  }
+  /* modal */
+  
+  .contact-modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1057;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .contact-modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+  }
+  
+  .contact-close {
+    color: #aaa;
+    /* float: right; */
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    right: 5px;
+    top: 0px;
+    position: absolute;
+  }
+  
+  .contact-close:hover {
+    color: #000;
+  }
+  
+  /* =============Common Style  end================= */
+  
+  /* ================= developer banner section start  ==================  */
+  .banner-developer-section {
+    margin-top: 80px;
+    background-image: url(../images/bg-developer-background.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: 480px 122px;
+    padding-bottom: 20px;
+  }
+  .banner-breadcrumb {
+    color: #5e5e5e;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    opacity: 1;
+    margin-bottom: 20px;
+  }
+  .developer-content-container {
+    display: flex;
+    gap: 20px;
+  }
+  .developer-content-container img {
+    height: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .developer-con-title {
+    color: #373f44;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 4px;
+  }
+  .developer-con-name {
+    color: #373f44;
+    display: block;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+  }
+  
+  /* ================= developer banner section end  ==================  */
+  
+  /* developer navbar */
+  .developer-section-navbar {
+    background-color: #ffffff;
+    border-top: 1px solid #e6e6e6 !important;
+    border-bottom: 1px solid #e6e6e6 !important;
+    z-index: 10;
+    position: sticky;
+    top: 63px;
+    padding: 0;
+  }
+  .nav-hover-link {
+    border-bottom: 3px solid #f47118;
+  }
+  
+  /* ================= developer banner section end  ==================  */
+  /* ======================== About section start =================  */
+  .about-container {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .developer-button-container,
+  .pune-developer-button-container,
+  .bengalore-developer-button-container,
+  .gurugram-developer-button-container,
+  .noida-developer-button-container,
+  .kolkata-developer-button-container,
+  .delhi-developer-button-container {
+    display: flex;
+    gap: 20px;
+  }
+  .developer-button-container button,
+  .pune-developer-button-container button,
+  .bengalore-developer-button-container button,
+  .gurugram-developer-button-container button,
+  .noida-developer-button-container button,
+  .kolkata-developer-button-container button,
+  .delhi-developer-button-container button {
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 30px;
+    color: #373f44;
+    font-size: 14px;
+    line-height: 18px;
+    margin-right: 12px;
+    padding: 10px 16px;
+  }
+  .developer-button-container button.active,
+  .pune-developer-button-container button.p_active,
+  .bengalore-developer-button-container button.b_active,
+  .gurugram-developer-button-container button.gurugram_active,
+  .noida-developer-button-container button.noida_active,
+  .kolkata-developer-button-container button.kolkata_active,
+  .delhi-developer-button-container button.delhi_active {
+    border: 1px solid #f47118;
+  }
+  .filter-title-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .filter-title-container p {
+    margin: 0px;
+  }
+  .filter-page-number {
+    font-weight: 600;
+  }
+  .border {
+    border: 1px solid #e6e6e6;
+  }
+  /* ======================== About section end =================  */
+  
+  .developer-swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .newproject_rerabadge {
+    background: linear-gradient(334deg, #00000080 10.16%, #00000059 78.13%);
+    border-radius: 30px 0 0;
+    bottom: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 11px;
+    max-width: 90%;
+    overflow: hidden;
+    padding: 3px 8px 3px 18px;
+    position: absolute;
+    right: 0;
+    text-overflow: ellipsis;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    white-space: nowrap;
+    z-index: 100;
+  }
+  .developer-prev,
+  .developer-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .developer-prev {
+    left: 25px !important;
+  }
+  .developer-next {
+    right: 25px !important;
+  }
+  .developer-next,
+  .developer-prev {
+    background-color: #fcfcfc;
+    position: absolute;
+  }
+  
+  .developer-prev::after,
+  .swiper-rtl .developer-next::after,
+  .developer-next::after,
+  .swiper-rtl .developer-prev::after {
+    padding: 8px 11px;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 50%;
+    font-size: 10px !important;
+    font-weight: 700 !important;
+    background-color: #fcfcfc;
+  }
+  
+  .developer-card {
+    min-height: 400px;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  }
+  .developer-card a:hover{
+    text-decoration: none;
+  }
+  .developer_swiper_image {
+    height: 200px !important;
+  
+    border-radius: 10px 10px 0 0;
+  }
+  .developer-card-body {
+    padding: 20px;
+    color: #000;
+    cursor: pointer;
+  }
+  .developer-header h2 {
+    text-align: start;
+    font-size: 18px;
+  }
+  
+  .developer-header span {
+    color: #323740;
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: start;
+  }
+  .developer-location {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: end;
+  }
+  .area-container {
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+  }
+  .area-contant-details1 {
+    width: 50%;
+    border-right: 1px solid #d4e1f4;
+    text-align: left;
+  }
+  .area-contant-details2 {
+    width: 50%;
+    float: right;
+    text-align: right !important;
+  }
+  .area-place {
+    color: #323740;
+    display: block;
+    font-size: 12px;
+    margin-bottom: 2px;
+    opacity: 0.5;
+  }
+  .area-place1 {
+    color: #000;
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .d-price-container {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 24px;
+  }
+  .d-price {
+    width: 52%;
+    text-align: left;
+  }
+  .d-price h2 {
+    color: #232323;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0px;
+  }
+  .d-reward {
+    font-size: 10px !important;
+    font-weight: 400;
+  }
+  .d-price-sq {
+    color: #323740;
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .d-compare-checkbox {
+    width: 50%;
+    display: flex;
+    gap: 4px;
+    justify-content: end;
+    align-items: end;
+  }
+  .d-title-compare {
+    font-size: 12px;
+    color: #323740;
+    vertical-align: baseline;
+  }
+  .d-compare-input-check {
+    width: 15px !important;
+    accent-color: #f47118;
+  }
+  .d-btn-container {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .d_content {
+    display: none; /* Hide all content sections initially */
+    margin-top: 20px;
+  }
+  /* Style for the active content */
+  .d_active {
+    display: block;
+  }
+  /* pune */
+  .p_content {
+    display: none; /* Hide all by default */
+  }
+  
+  .p_active {
+    display: block;
+  }
+  /*  bengalore*/
+  .b_content {
+    display: none; /* Hide all by default */
+  }
+  .b_active {
+    display: block;
+  }
+  /* .gurugram */
+  .gurugram_content {
+    display: none; /* Hide all by default */
+  }
+  .gurugram_active {
+    display: block;
+  }
+  /* .Noida */
+  .noida_content {
+    display: none; /* Hide all by default */
+  }
+  .noida_active {
+    display: block;
+  }
+  /* Kolkata */
+  .kolkata_content {
+    display: none; /* Hide all by default */
+  }
+  .kolkata_active {
+    display: block;
+  }
+  /* Kolkata */
+  .delhi_content {
+    display: none; /* Hide all by default */
+  }
+  .delhi_active {
+    display: block;
+  }
+  
+  /* media query */
+  @media (max-width: 566px) {
+    .developer-button-container button,
+    .pune-developer-button-container button,
+    .bengalore-developer-button-container button,
+    .gurugram-developer-button-container button,
+    .noida-developer-button-container button,
+    .kolkata-developer-button-container button,
+    .delhi-developer-button-container button {
+      border-radius: 18px;
+      color: #373f44;
+      font-size: 13px;
+      line-height: 12px;
+      margin-right: 12px;
+      padding: 8px 12px;
+    }
+    .e-contact-btn {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  @media (max-width: 443px) {
+    .developer-button-container button,
+    .pune-developer-button-container button,
+    .bengalore-developer-button-container button,
+    .gurugram-developer-button-container button,
+    .noida-developer-button-container button,
+    .kolkata-developer-button-container button,
+    .delhi-developer-button-container button {
+      font-size: 9px;
+      margin-right: -6px;
+      padding: 7px 7px;
+  
+      border-radius: 7px;
+    }
+  }
+  @media (max-width: 374px) {
+    .developer-con-name {
+      font-size: 19px;
+    }
+  }

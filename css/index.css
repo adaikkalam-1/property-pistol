@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 14px;
+  max-width: 100%;
+  background-color: #FAF7F5;
+}
+.light-page{
+  background-color:  #FAF7F5;
+}
+.container_wrapper_row1{
+  background-color: white;
+  min-height: 1064px;
+}
+.container_wrapper_row2{
+  background-color: white;
+  padding:20px 0;
+}
+.container_wrapper_row3{
+  background-color: white;
+  padding:20px 0;
+}
+.container_wrapper_row4{
+  background-color: white;
+  padding:20px 0;
+}
+.container_wrapper_row5{
+  background-color: white;
+  padding: 20px 0 0;
+}
+.no-scroll{
+  overflow: hidden !important;
+  height: 100vh !important;
+}
+.recommendproperty_card a:hover,.newproject_card a:hover,.addedproperty_card a:hover,.developer-card:hover{
+  text-decoration: none;
+}
+
+
+@media (max-width:700px){
+  .newprojects_mainheading h2{
+    font-size: 16px !important;
+  }
+}

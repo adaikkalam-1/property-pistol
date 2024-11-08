@@ -1,0 +1,191 @@
+.added_properties{
+    margin-top: 20px;
+}
+.addproperty_container{
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.addedproperty_name{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.addproperty_header p{
+    color: #323740;
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+}
+.addedproperty_name h5{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    padding:3px 0;
+}
+.addedproperty_name button{
+    border: none;
+    background-color: transparent;
+}
+.addedproperty_name button:hover{
+  cursor: pointer;
+}
+.addedproperty_card {
+    min-height: 385px;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  }
+  .addedproperty_card{
+    cursor: pointer;
+  }
+.addproperty_header{
+    text-align: start;
+  margin: 0;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+.addedpropertycard_body{
+    padding: 15px 15px 5px;
+  color: #000;
+  height: 100%;
+}
+.addedpropertycard_body p{
+color: #323740;
+}
+.addedproperty_price{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    text-align: start;
+}
+.addedproperty_price .price_col {
+    width: 50%;
+  }
+  .addedproperty_price .price_col:nth-child(1) {
+    padding: 0 10px 0 0;
+    border-right: 1px solid rgb(216, 213, 213);
+  }
+  .addedproperty_price .price_col:nth-child(2) {
+    border: none;
+    padding: 0 10px 0 15px;
+  }
+  .addedproperty_price .price_col:nth-child(3) {
+    padding: 0;
+    border-right: 1px solid rgb(216, 213, 213);
+  }
+  .addedproperty_price .price_col:nth-child(4) {
+      padding: 0 10px 0 25px;
+    border: none;
+  }
+  .addedproperty_price .price_col:nth-child(1),.addedproperty_price
+  .price_col:nth-child(2) {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+  .addedproperty_price .price_col:nth-child(3),
+  .addedproperty_price .price_col:nth-child(4) {
+    margin: 20px 0 0;
+  }
+  .addedproperty_price .price_col_price h5 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+  .addedproperty_price .price_col_price {
+    width: 80%;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap: 5px;
+    margin-top: 10px;
+  }
+  .addedproperty_price .price_col_price p {
+    font-size: 10px;
+    margin: 0;
+    font-weight: 600;
+    color: #323740;
+    opacity: .5;
+  }
+  .addedproperty_price .price_col_price h5 {
+    font-size: 16px;
+  font-weight: 600;
+}
+
+  .newproject_card .newproject_header .newproject_name h5 {
+    line-height: 20px;
+  }
+  .addedproperty_price .price_col p {
+    margin-bottom: 4px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .addedproperty_price .price_col h5 {
+    font-size: 12px !important;
+    font-weight: 500;
+  }
+  .addedProperty-prev{
+    width: 50% !important;
+    position: absolute;
+  }
+  .addedProperty-prev::after,
+  .swiper-rtl .addedProperty-next::after,
+  .addedProperty-next::after,
+  .swiper-rtl .addedProperty-prev::after {
+    padding: 8px 12px;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 50%;
+    font-size: 10px !important;
+    font-weight: 700 !important;
+  }
+  .addedProperty-next{
+    width: 50% !important;
+    position: absolute;
+  }
+
+  .addedproperty_images{
+    height: 190px;
+      border-radius: 10px 10px 0 0;
+  }
+
+  .addedPropertyImage-prev, .addedPropertyImage-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .addedPropertyImage-prev{
+      left:25px !important;
+  }
+  .addedPropertyImage-next{
+      right:25px !important;
+  }
+  .addedPropertyImage-next,.addedPropertyImage-prev{
+      background-color: #fcfcfc;
+      position: absolute;
+  }
+  
+      .addedPropertyImage-prev::after, .swiper-rtl .addedPropertyImage-next::after, .addedPropertyImage-next::after, .swiper-rtl .addedPropertyImage-prev::after {
+          padding: 8px 11px;
+          border: 1px solid rgb(221, 221, 221);
+          border-radius: 50%;
+          font-size: 10px !important;
+          font-weight: 700 !important;
+          background-color: #fcfcfc;
+          }
+
+

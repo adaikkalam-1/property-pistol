@@ -1,0 +1,108 @@
+.container {
+  margin: 0 auto;
+  padding: 4rem;
+  width: 100%;
+  max-width: 1200px; /* Set a max width for large screens */
+}
+
+.accordion {
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 1rem;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.acc-btn[aria-expanded="true"] {
+  border-bottom: 1px solid #f47118;
+}
+
+.accordion-title {
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  word-break: break-word;
+}
+
+.acc-btn {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1.2em 0;
+  color: #5a5a5a;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: #ffffff;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.acc-btn:hover,
+.acc-btn:focus {
+  background-color: #ffffff;
+}
+
+.acc-btn .fa {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
+}
+
+.acc-btn[aria-expanded="true"] .fa {
+  transform: rotate(180deg); /* Rotate the arrow up when expanded */
+}
+
+.accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0;
+  transition: opacity 300ms ease, max-height 300ms ease;
+}
+
+.acc-btn[aria-expanded="true"] + .accordion-content {
+  opacity: 1;
+  max-height: 1000px; /* Ensure full visibility for content */
+  padding: 1rem 0;
+}
+
+.accordion-content p {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.icon {
+  display: flex;
+  float: right;
+  padding-right: 17px;
+}
+@media (max-width: 1066px) {
+  .accordion-title {
+    font-size: 12px;
+  }
+  .accordion-content p {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+  .question-title {
+    font-size: 18px;
+  }
+  .fas {
+    font-size: 12px;
+  }
+}
+
+@media (max-width:576px){
+  .acc-btn{
+    display: flex !important;
+justify-content: center;
+align-items: center;
+gap: 17px;
+  }
+}

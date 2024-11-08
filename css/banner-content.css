@@ -1,0 +1,1486 @@
+/* =========header css ========== */
+.banner-section {
+  background-color: #fafafa;
+  padding-top: 10px;
+  position: relative;
+}
+.banner-wrapper {
+  position: relative;
+  height: 375px;
+  margin-top: 53px;
+  width: 100%;
+}
+.banner {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: transparent;
+  height: 375px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.banner h1 {
+  color: #fff;
+  font-size: 36px;
+  margin: 0 40px 40px;
+  min-width: 950px;
+  position: relative;
+  text-shadow: 2px 5px 6px #0f00091a;
+}
+.banner-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+
+.banner-image-wrapper {
+  height: 100%;
+  left: 0;
+  padding: 0 10px;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+.banner-image-wrapper:after {
+  background: #00000059;
+  border-radius: 4px;
+  bottom: 0;
+  content: "";
+  display: block;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: calc(100% - 20px);
+}
+.banner-image-wrapper img {
+  border-radius: 4px;
+  box-shadow: inset 0 4px 4px #0000000a;
+  filter: blur(0);
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  transition: 0.3s;
+  width: 100%;
+}
+.banner-image-wrapper img.main-banner-placeholder {
+  filter: blur(30px);
+}
+.main-search-container {
+  display: flex;
+  gap: 8px;
+  margin: 0 auto;
+  max-width: 970px;
+}
+.location-selector {
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+  color: #373f44;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  gap: 6px;
+  padding: 12px 18px 12px 12px;
+}
+.location-selector,
+.main-searchbar {
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+}
+.main-searchbar {
+  border-radius: 4px;
+  flex-grow: 1;
+  min-width: 300px;
+  transition: 0.3s;
+}
+.main-searchbar.border-focus {
+  border: 1px solid #373f44 !important;
+}
+.main-searchbar .icon {
+  padding-left: 16px;
+}
+.main-searchbar .btn-nearme {
+  background-color: #fff;
+  border: none;
+  outline: none;
+  padding: 6px 14px;
+}
+
+.main-searchbar .btn-nearme {
+  background-color: #fff;
+  border: none;
+  outline: none;
+  padding: 6px 14px;
+}
+.main-searchbar .input {
+  flex-grow: 1;
+}
+.main-searchbar input::-moz-placeholder {
+  color: #373f4480 !important;
+}
+.main-searchbar input::placeholder {
+  color: #373f4480 !important;
+}
+.search-btn {
+  background-color: #f47118;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 16px 18px;
+  text-align: center;
+}
+.filters,
+.search-btn {
+  border: none;
+  border-radius: 4px;
+  box-shadow: none;
+  outline: none;
+}
+.filters {
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  padding: 16px;
+}
+.filters .position-relative::after {
+  background-color: #f47118;
+  border-radius: 50%;
+  content: " ";
+  display: block;
+  height: 7px;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(75%, -25%);
+  transition: all 0.3s ease-in-out;
+  width: 7px;
+}
+.filters .copy {
+  color: #373f44;
+  display: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+.filters.active .position-relative:after {
+  opacity: 1;
+}
+.nearmebounce {
+  animation: nearmebounce-69753213 2s ease infinite;
+}
+.nearme-badge {
+  background-color: #f47118;
+  border-radius: 0.25rem;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 599;
+  left: 12px;
+  padding: 3px 7px;
+  position: absolute;
+  text-align: center;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  top: -22px;
+}
+.nearme-badge::after {
+  border: 5px solid transparent;
+  border-top-color: #f47118;
+  content: "";
+  left: 50%;
+  margin-left: -5px;
+  position: absolute;
+  top: 100%;
+}
+@keyframes nearmebounce-69753213 {
+  0%,
+  20%,
+  50%,
+  80%,
+  to {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+.banner-content .modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 5px;
+  position: relative;
+  /* overflow-y: scroll; */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 2;
+  position: absolute;
+  right: 6px;
+  top: 7px;
+  line-height: 1;
+  padding: 0;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.popular-heading {
+  color: #373f44;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+}
+hr {
+  color: #dee2e6;
+}
+.citymodal-content {
+  background-color: white;
+  margin: 8% auto;
+  padding: 10px;
+  border-radius: 5px;
+  width: 80%;
+  z-index: 10;
+  height: auto !important;
+}
+.modal-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  padding: 7px;
+}
+.citymodal_row1 {
+  display: flex;
+  padding: 5px 0;
+}
+.popular-heading {
+  width: 95%;
+}
+.cityclose_icon {
+  width: 5%;
+  align-items: end;
+  justify-content: center;
+  display: flex;
+}
+.cityclose_icon:hover {
+  cursor: pointer;
+}
+.city-mumbai {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://www.propertypistol.com/images/city-mumbai-thumb.jpg");
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding: 10px;
+  height: 65px;
+  border-radius: 3px;
+  font-size: 18px;
+  align-items: center;
+  color: #fff;
+  display: flex;
+  font-weight: 500;
+  gap: 6px;
+  justify-content: center;
+  letter-spacing: 0.2px;
+  position: relative;
+}
+.city-pune {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://www.propertypistol.com/images/city-pune-thumb.jpg");
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding: 10px;
+  height: 65px;
+  border-radius: 3px;
+  font-size: 18px;
+  align-items: center;
+  color: #fff;
+  display: flex;
+  font-weight: 500;
+  gap: 6px;
+  justify-content: center;
+  letter-spacing: 0.2px;
+  position: relative;
+}
+.city-delhi {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://www.propertypistol.com/images/city-delhi-thumb.jpg");
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding: 10px;
+  height: 65px;
+  border-radius: 3px;
+  font-size: 18px;
+  align-items: center;
+  color: #fff;
+  display: flex;
+  font-weight: 500;
+  gap: 6px;
+  justify-content: center;
+  letter-spacing: 0.2px;
+  position: relative;
+}
+.city-noida {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://www.propertypistol.com/images/city-noida-thumb.jpg");
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding: 10px;
+  height: 65px;
+  border-radius: 3px;
+  font-size: 18px;
+  align-items: center;
+  color: #fff;
+  display: flex;
+  font-weight: 500;
+  gap: 6px;
+  justify-content: center;
+  letter-spacing: 0.2px;
+  position: relative;
+}
+.city-gurugram {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://www.propertypistol.com/images/city-gurugram-thumb.jpg");
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding: 10px;
+  height: 65px;
+  border-radius: 3px;
+  font-size: 18px;
+  align-items: center;
+  color: #fff;
+  display: flex;
+  font-weight: 500;
+  gap: 6px;
+  justify-content: center;
+  letter-spacing: 0.2px;
+  position: relative;
+}
+.city-lucknow {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://www.propertypistol.com/images/city-lucknow-thumb.jpg");
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding: 10px;
+  height: 65px;
+  border-radius: 3px;
+  font-size: 18px;
+  align-items: center;
+  color: #fff;
+  display: flex;
+  font-weight: 500;
+  gap: 6px;
+  justify-content: center;
+  letter-spacing: 0.2px;
+  position: relative;
+}
+.city-hyderabad {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://www.propertypistol.com/images/city-hyderabad-thumb.jpg");
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding: 10px;
+  height: 65px;
+  border-radius: 3px;
+  font-size: 18px;
+  align-items: center;
+  color: #fff;
+  display: flex;
+  font-weight: 500;
+  gap: 6px;
+  justify-content: center;
+  letter-spacing: 0.2px;
+  position: relative;
+}
+.city-chennai {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://www.propertypistol.com/images/city-chennai-thumb.jpg");
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding: 10px;
+  height: 65px;
+  border-radius: 3px;
+  font-size: 18px;
+  align-items: center;
+  color: #fff;
+  display: flex;
+  font-weight: 500;
+  gap: 6px;
+  justify-content: center;
+  letter-spacing: 0.2px;
+  position: relative;
+}
+.city-bangalore {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://www.propertypistol.com/images/city-bangalore-thumb.jpg");
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding: 10px;
+  height: 65px;
+  border-radius: 3px;
+  font-size: 18px;
+  align-items: center;
+  color: #fff;
+  display: flex;
+  font-weight: 500;
+  gap: 6px;
+  justify-content: center;
+  letter-spacing: 0.2px;
+  position: relative;
+}
+.city-kochi {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://www.propertypistol.com/images/city-kochi-thumb.jpg");
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding: 10px;
+  height: 65px;
+  border-radius: 3px;
+  font-size: 18px;
+  align-items: center;
+  color: #fff;
+  display: flex;
+  font-weight: 500;
+  gap: 6px;
+  justify-content: center;
+  letter-spacing: 0.2px;
+  position: relative;
+}
+.city-kolkata {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://www.propertypistol.com/images/city-kolkata-thumb.jpg");
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding: 10px;
+  height: 65px;
+  border-radius: 3px;
+  font-size: 18px;
+  align-items: center;
+  color: #fff;
+  display: flex;
+  font-weight: 500;
+  gap: 6px;
+  justify-content: center;
+  letter-spacing: 0.2px;
+  position: relative;
+}
+.city-dubai {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://www.propertypistol.com/images/city-dubai-thumb.jpg");
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding: 10px;
+  height: 65px;
+  border-radius: 3px;
+  font-size: 18px;
+  align-items: center;
+  color: #fff;
+  display: flex;
+  font-weight: 500;
+  gap: 6px;
+  justify-content: center;
+  letter-spacing: 0.2px;
+  position: relative;
+}
+.city-vancouver {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://www.propertypistol.com/images/city-vancouver-thumb.jpg");
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding: 10px;
+  height: 65px;
+  border-radius: 3px;
+  font-size: 18px;
+  align-items: center;
+  color: #fff;
+  display: flex;
+  font-weight: 500;
+  gap: 6px;
+  justify-content: center;
+  letter-spacing: 0.2px;
+  position: relative;
+}
+.city-ahmedabad {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://www.propertypistol.com/images/city-ahmedabad-thumb.jpg");
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding: 10px;
+  height: 65px;
+  border-radius: 3px;
+  font-size: 18px;
+  align-items: center;
+  color: #fff;
+  display: flex;
+  font-weight: 500;
+  gap: 6px;
+  justify-content: center;
+  letter-spacing: 0.2px;
+  position: relative;
+}
+.city-calicut {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://www.propertypistol.com/images/city-calicut-thumb.jpg");
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding: 10px;
+  height: 65px;
+  border-radius: 3px;
+  font-size: 18px;
+  align-items: center;
+  color: #fff;
+  display: flex;
+  font-weight: 500;
+  gap: 6px;
+  justify-content: center;
+  letter-spacing: 0.2px;
+  position: relative;
+}
+.city-coimbatore {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://www.propertypistol.com/images/city-coimbatore-thumb.jpg");
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding: 10px;
+  height: 65px;
+  border-radius: 3px;
+  font-size: 18px;
+  align-items: center;
+  color: #fff;
+  display: flex;
+  font-weight: 500;
+  gap: 6px;
+  justify-content: center;
+  letter-spacing: 0.2px;
+  position: relative;
+}
+.city-goa {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://www.propertypistol.com/images/city-goa-thumb.jpg");
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding: 10px;
+  height: 65px;
+  border-radius: 3px;
+  font-size: 18px;
+  align-items: center;
+  color: #fff;
+  display: flex;
+  font-weight: 500;
+  gap: 6px;
+  justify-content: center;
+  letter-spacing: 0.2px;
+  position: relative;
+}
+.city-nagpur {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://www.propertypistol.com/images/city-nagpur-thumb.jpg");
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding: 10px;
+  height: 65px;
+  border-radius: 3px;
+  font-size: 18px;
+  align-items: center;
+  color: #fff;
+  display: flex;
+  font-weight: 500;
+  gap: 6px;
+  justify-content: center;
+  letter-spacing: 0.2px;
+  position: relative;
+}
+.city-thrissur {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://www.propertypistol.com/images/city-thrissur-thumb.jpg");
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding: 10px;
+  height: 65px;
+  border-radius: 3px;
+  font-size: 18px;
+  align-items: center;
+  color: #fff;
+  display: flex;
+  font-weight: 500;
+  gap: 6px;
+  justify-content: center;
+  letter-spacing: 0.2px;
+  position: relative;
+}
+.city-trivandrum {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://www.propertypistol.com/images/city-trivandrum-thumb.jpg");
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding: 10px;
+  height: 65px;
+  border-radius: 3px;
+  font-size: 18px;
+  align-items: center;
+  color: #fff;
+  display: flex;
+  font-weight: 500;
+  gap: 6px;
+  justify-content: center;
+  letter-spacing: 0.2px;
+  position: relative;
+}
+.filters:hover,
+.search-btn:hover {
+  cursor: pointer;
+}
+.bannerfilter_modalcontainer {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Apply transition */
+}
+
+.bannerfilter_modalcontainer.slide-in {
+  display: block;
+}
+.bannerfilter_modal {
+  background-color: #fefefe;
+  margin: 6% auto;
+  border: 1px solid #888;
+  width: 60%;
+  border-radius: 15px;
+  position: relative;
+}
+.bannerfilter_row1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.bannerfilter_row1 .filter_heading {
+  margin: 0;
+  width: 95%;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+}
+.bannerfilter_row1 .filterclose_btn {
+  background: transparent;
+  border: none;
+  width: 5%;
+}
+.bannerfilter_row2 {
+  padding: 15px;
+  overflow-y: scroll;
+  scrollbar-width: thin; /* Sets a thinner scrollbar */
+  scrollbar-color: #c2c2c2 #f1f1f1;
+  height: 300px;
+}
+.filterclose_btn:hover {
+  cursor: pointer;
+}
+.filter_divider {
+  width: 100%;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  color: #dee2e6;
+}
+.filtercontent_row1 {
+  margin: 8px 0 25px;
+}
+.filter_search {
+  border: 1px solid black;
+  padding: 5px 0;
+  margin: 19px 0;
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  border-radius: 4px;
+  flex-grow: 1;
+  min-width: 300px;
+  transition: 0.3s;
+}
+.filtercontent_heading {
+  color: #373f44;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+}
+.filtercontent_row2 {
+  margin: 15px 0 25px;
+}
+.filterrow2_button {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.filterrow2_button button {
+  border-radius: 30px;
+  color: #373f44;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  padding: 10px 18px;
+  transition: all 0.3s ease-out;
+}
+.filterrow2_button .filter_buybutton {
+  border-radius: 30px;
+  color: #373f44;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  padding: 10px 18px;
+  transition: all 0.3s ease-out;
+  background-color: #373f44;
+  color: #fff;
+}
+.filterrow2_button .filter_rentbutton {
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  font-size: 14px;
+  font-weight: 400;
+  color: #373f44;
+}
+
+.filtercontent_row3 button,
+.filtercontent_row6 button,
+.filtercontent_row7 button,
+.filtercontent_row8 button {
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 30px;
+  color: #373f44;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 3px;
+  padding: 10px 18px;
+  transition: all 0.3s ease-out;
+}
+.filtercontent_row3 button:hover,
+.filtercontent_row6 button:hover,
+.filtercontent_row7 button:hover,
+.filtercontent_row8 button:hover {
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.filtercontent_row6,
+.filtercontent_row8,
+.filtercontent_row3,
+.filtercontent_row7 {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.filtercontent_divider {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  color: #dee2e6;
+}
+.filter_ranger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.filter_ranger p {
+  margin: 0;
+  font-size: 11px;
+}
+.range_container {
+  --_marker-border-clr: #fafafa;
+  --_marker-size: 17px;
+  --_track-heigt: 4px;
+
+  --_tooltip-bg-clr: rgba(253, 251, 251, 0.4);
+  --_tooltip-txt-clr: black;
+  width: 83%;
+  min-width: 100px;
+  display: flex;
+  flex-direction: column;
+  margin: 40px 10px 10px;
+}
+
+.sliders_control {
+  position: relative;
+}
+#toSlider {
+  background-color: #f58120 !important;
+}
+.slider-tooltip {
+  position: absolute;
+  top: -3.5rem;
+  left: 0;
+  width: fit-content;
+  background-color: var(--_tooltip-bg-clr);
+  color: var(--_tooltip-txt-clr);
+  font-size: 0.8rem;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  translate: -50% 0;
+  border: 1px solid #f58120;
+}
+
+.slider-tooltip::before {
+  content: "";
+  position: absolute;
+  bottom: -0.25rem;
+  left: 50%;
+  translate: -50% 0;
+  width: 0.5rem;
+  height: 0.5rem;
+  rotate: 45deg;
+  z-index: -1;
+  background-color: inherit;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  pointer-events: all;
+  width: var(--_marker-size);
+  height: var(--_marker-size);
+  background-color: var(--_marker-border-clr);
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px var(--_marker-border-clr);
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  -webkit-appearance: none;
+  pointer-events: all;
+  width: var(--_marker-size);
+  height: var(--_marker-size);
+  background-color: var(--_marker-border-clr);
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px var(--_marker-border-clr);
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  background: #f7f7f7;
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+  box-shadow: inset 0 0 3px #387bbe, 0 0 9px #387bbe;
+  -webkit-box-shadow: inset 0 0 3px #387bbe, 0 0 9px #387bbe;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: var(--_track-heigt);
+  width: 100%;
+  position: absolute;
+  background-color: var(--_marker-border-clr);
+  pointer-events: none;
+}
+
+#fromSlider {
+  height: 0;
+  z-index: 1;
+}
+
+.scale {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  position: relative;
+  width: calc(100% - var(--_marker-size));
+  margin-inline: auto;
+  font-size: 0.8rem;
+}
+
+.scale div {
+  position: absolute;
+  translate: -50% 0;
+}
+
+.scale div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  translate: -50% -125%;
+  width: 1px;
+  height: 10px;
+  background-color: #666;
+}
+
+.budget_amount {
+  display: flex;
+  justify-content: space-around !important;
+  text-align: start;
+}
+.max_value_budget,
+.min_value_budget {
+  width: 40% !important;
+  background-color: transparent;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  padding: 10px;
+}
+.min_value_budget p,
+.max_value_budget p {
+  margin: 0;
+  padding: 2px;
+}
+.max_value_budget p:nth-child(1),
+.min_value_budget p:nth-child(1) {
+  color: #373f4480;
+  font-size: 14px;
+  font-weight: 500;
+}
+.max_value_budget p:nth-child(2),
+.min_value_budget p:nth-child(2) {
+  font-size: 14px;
+  font-weight: 500;
+}
+.budget_amountwords {
+  display: flex;
+  justify-content: space-around;
+}
+.budget_min,
+.budget_max {
+  width: 40% !important;
+  text-align: start;
+}
+.budget_min p,
+.budget_max p {
+  padding: 10px;
+  font-size: 11px;
+  font-weight: 500;
+}
+.filtercontent_row5_swictch1 {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.switch1,
+.switch2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.switch1 p:nth-child(1),
+.switch2 p:nth-child(1) {
+  width: 90%;
+}
+/*    .switch1 p:nth-child(2),.switch2 p:nth-child(2){
+                  width: 10%;
+                } */
+.switch1 .switch1_content p:nth-child(1),
+.switch2 .switch2_content p:nth-child(1) {
+  color: #373f44;
+  font-size: 16px !important;
+}
+.switch1 .switch1_content p:nth-child(2),
+.switch2 .switch2_content p:nth-child(2) {
+  color: #9ea2a5;
+  font-size: 14px !important;
+}
+.switch1 p,
+.switch2 p {
+  margin: 0;
+}
+.filter_switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+}
+
+/* Hide default HTML checkbox */
+.filter_switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.filter-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #b0b0b0;
+  border: 1px solid #b0b0b0;
+  transition: 0.4s;
+  border-radius: 32px;
+  outline: none;
+}
+
+.filter-slider:before {
+  position: absolute;
+  content: "";
+  width: 2rem;
+  border-radius: 50%;
+  outline: 2px solid #b0b0b0;
+  left: -1px;
+  height: 1.8rem;
+  bottom: 1px;
+  background-color: #fff;
+  transition: transform 0.25s ease-in-out 0s;
+}
+
+.filter-slider-icon {
+  opacity: 0;
+  height: 12px;
+  width: 12px;
+  stroke-width: 8;
+  position: absolute;
+  z-index: 999;
+  stroke: #222222;
+  right: 60%;
+  top: 30%;
+  transition: right ease-in-out 0.3s, opacity ease-in-out 0.15s;
+}
+
+input:checked + .filter-slider {
+  background-color: #222222;
+}
+
+input:checked + .filter-slider .filter-slider-icon {
+  opacity: 1;
+  right: 20%;
+}
+
+input:checked + .filter-slider:before {
+  transform: translateX(1.5em);
+  outline-color: #181818;
+}
+
+.amenities_row1 {
+  display: flex;
+  gap: 10px;
+}
+.amenities_row1_col1,
+.amenities_row1_col2 {
+  width: 45%;
+}
+.amenities_row1_col1 div,
+.amenities_row1_col2 div {
+  display: flex;
+  gap: 1px;
+}
+
+.checkbox-wrapper-21 .control {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.checkbox-wrapper-21 .control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  appearance: none;
+  background-color: #fff;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  height: 20px;
+  margin-top: 0;
+  vertical-align: top;
+  width: 20px;
+}
+.checkbox-wrapper-21 .control__indicator {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background: #fff;
+  border: 1px solid #cecece;
+  border-radius: 3px;
+}
+.checkbox-wrapper-21 .control:hover input ~ .control__indicator,
+.checkbox-wrapper-21 .control input:focus ~ .control__indicator {
+  background: #fcfcfc;
+}
+.checkbox-wrapper-21 .control input:checked ~ .control__indicator {
+  background: #050505;
+}
+.checkbox-wrapper-21
+  .control:hover
+  input:not([disabled]):checked
+  ~ .control__indicator,
+.checkbox-wrapper-21 .control input:checked:focus ~ .control__indicator {
+  background: #000000;
+}
+.checkbox-wrapper-21 .control input:disabled ~ .control__indicator {
+  background: #e6e6e6;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.checkbox-wrapper-21 .control__indicator:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.checkbox-wrapper-21 .control input:checked ~ .control__indicator:after {
+  display: block;
+}
+.checkbox-wrapper-21 .control--checkbox .control__indicator:after {
+  left: 8px;
+  top: 4px;
+  width: 4px; /* Slightly wider for better visibility */
+  height: 8px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0; /* Consistent thickness for a clear, sharp tick */
+  transform: rotate(45deg);
+}
+.checkbox-wrapper-21
+  .control--checkbox
+  input:disabled
+  ~ .control__indicator:after {
+  border-color: #7b7b7b;
+}
+.amenities_row2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0 10px;
+}
+.amenities_row2 p {
+  color: #373f44;
+  font-size: 16px;
+  margin: 0;
+}
+.bannerfilter_row3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #e1d8d8;
+  padding: 25px 20px;
+}
+.bannerfilter_row3 div a {
+  color: #373f44;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: underline !important;
+}
+.bannerfilter_row3 div a:hover {
+  cursor: pointer;
+}
+.bannerfilter_row3 button {
+  background-color: #f47118;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px 20px;
+  text-align: center;
+  border: none;
+}
+.bannerfilter_row3 button:hover {
+  cursor: pointer;
+}
+@media (max-width: 1199px) {
+  .banner-content h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    min-width: auto;
+  }
+}
+@media (max-width: 1099px) {
+  .banner-content h1 {
+    margin: 0 0 30px;
+  }
+  .banner-content {
+    margin: auto;
+    padding: 0 15px;
+    position: static;
+    transform: none;
+    width: 80%;
+  }
+}
+@media (max-width: 991px) {
+  .main-searchbar input {
+    margin-top: 0 !important;
+  }
+
+  .city-name,
+  .nearme-badge {
+    white-space: nowrap;
+  }
+  .max_value_budget p:nth-child(1),
+  .min_value_budget p:nth-child(1) {
+    font-size: 10px;
+  }
+  .max_value_budget p:nth-child(2),
+  .min_value_budget p:nth-child(2) {
+    font-size: 12px;
+  }
+  .slider-tooltip {
+    font-size: 12px;
+  }
+  .switch1 .switch1_content p:nth-child(1),
+  .switch2 .switch2_content p:nth-child(1) {
+    font-size: 13px !important;
+  }
+  .switch1 .switch1_content p:nth-child(2),
+  .switch2 .switch2_content p:nth-child(2) {
+    font-size: 11px !important;
+  }
+  .filter_switch {
+    font-size: 14px;
+  }
+  .filter-slider::before {
+    width: 1.7rem;
+    height: 1.5rem;
+  }
+  .bannerfilter_row3 button {
+    font-size: 13px;
+  }
+  .bannerfilter_modalcontainer {
+    top: 45px;
+  }
+}
+
+@media (max-width: 864px) {
+  .location-selector {
+    justify-content: center;
+    order: 3;
+  }
+  .main-searchbar {
+    flex-basis: 100%;
+    flex-grow: 2;
+    order: 1;
+  }
+  .filters {
+    order: 4;
+  }
+  .search-btn {
+    flex-grow: 1;
+    order: 5;
+  }
+  .modal-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .bannerfilter_modal {
+    width: 88%;
+  }
+}
+@media (max-width: 576px) {
+  .banner-section {
+    padding-top: 0;
+  }
+  .filters,
+  .location-selector {
+    flex-basis: 30%;
+    flex-grow: 1;
+  }
+  .filters {
+    gap: 4px;
+    padding: 14px;
+  }
+  .filters .copy {
+    display: inline-block;
+  }
+  .search-btn {
+    flex-basis: 100%;
+    margin-top: 12px;
+  }
+  .modal-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .max_value_budget,
+  .min_value_budget {
+    padding: 3px 12px;
+  }
+  .max_value_budget p:nth-child(2),
+  .min_value_budget p:nth-child(2) {
+    font-size: 10px;
+  }
+}
+@media (max-width: 575px) {
+  .banner {
+    height: 450px;
+  }
+  .banner-section {
+    padding-top: 0;
+  }
+  .banner-image-wrapper,
+  .banner-image-wrapper img {
+    border-radius: 0;
+    padding: 0;
+  }
+  .banner-image-wrapper:after {
+    width: 100%;
+  }
+  .banner-content h1 {
+    font-size: 26px;
+  }
+  .banner-content {
+    margin: auto;
+    padding-top: 50px;
+    width: 94%;
+  }
+}
+
+@media (max-width: 460px) {
+  .banner-wrapper {
+    position: relative;
+  }
+  .banner-image-wrapper {
+    height: 100%;
+    left: 0;
+    padding: 0 10px;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+  }
+  .banner-image-wrapper:after {
+    background: #00000059;
+    border-radius: 4px;
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: calc(100% - 20px);
+  }
+  .banner-image-wrapper img {
+    border-radius: 4px;
+    box-shadow: inset 0 4px 4px #0000000a;
+    filter: blur(0);
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+    width: 100%;
+  }
+  .banner-image-wrapper img.main-banner-placeholder {
+    filter: blur(30px);
+  }
+  .filters,
+  .location-selector {
+    flex-basis: auto;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  .modal-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .bannerfilter_modal {
+    margin: 0 auto;
+  }
+  .bannerfilter_modalcontainer {
+    top: 92px;
+  }
+}

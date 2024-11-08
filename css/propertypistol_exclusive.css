@@ -1,0 +1,45 @@
+.propertypistol {
+  width: 85%;
+  margin: 20px auto;
+}
+.property-cart-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.property-card {
+  background: #fff;
+  border: 1px solid #e6e6e6;
+ min-width: 200px;
+  height: 152px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  padding-bottom: 0px;
+  box-shadow: 0 2px 6px #0000000d;
+  border-radius: 6px;
+}
+.property-card:hover {
+  border: 1px solid #f47118;
+}
+.property-card p {
+  font-size: 14px;
+}
+.property-card img {
+  object-fit: contain;
+  overflow: hidden;
+}
+.voucher {
+  background-image: url("../images/voucher-bg.png");
+  width: 100%;
+}
+.voucher span {
+  font-weight: normal;
+  margin-left: 10px;
+  font-size: 11px;
+  color: #fff;
+}

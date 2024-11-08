@@ -1,0 +1,59 @@
+
+.container-fluid {
+  font-family: "poppins",sans serif;
+  }.row {
+  margin: 6px 0;
+  }
+  .badge_btn {
+    background: #5851ae;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+  }
+  .navbar-nav .nav-item .nav-link{
+    font-size: 15px;
+    font-weight: 500 !important;
+    color: #373f44;;
+  }
+
+  .navbar-model-content {
+    margin: 5% 18% !important;
+    max-width: 434px !important;
+    padding: 10px;
+  }
+  .nav-model-content-container {
+    display: flex;
+    gap: 20px;
+    padding: 10px 10px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .nav-model-body {
+    padding: 0px !important;
+  }
+  .nav-model-hover-content:hover {
+    background: #f0f0f0;
+  }
+  .nav-model-img {
+    align-self: normal;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .nav-model-content {
+    align-self: center;
+  }
+  .nav-model-content p {
+    padding: 0;
+    margin: 0;
+    color: #373f44;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .nav-model-content span {
+    color: #373f4480;
+    font-size: 13px;
+    font-weight: 400;
+  }

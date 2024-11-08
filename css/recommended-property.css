@@ -1,0 +1,84 @@
+.recommended_property{
+    margin:40px 0;
+}
+.recommendproperty_container{
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.recommendproperty_container .swiper .swiper-wrapper{
+ /*    gap:10px; */
+}
+div.recommendproperty_slide:nth-child(1) {
+    width: 365.667px;
+    }
+.recommendproperty_container > div:nth-child(2) {
+    padding: 10px 0;
+    }
+.recommendproperty_row1{
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+}
+.recommendproperty_slide{
+    border-radius: 10px;
+}
+.recommendproperty_card{
+    width: 100%;
+    margin-top: -7px;
+    min-height: 365px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.recommendproperty_card:hover{
+    cursor: pointer;
+}
+.recommendproperty_images{
+    height: 190px;
+}
+.form_descriptions {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 14px;
+    text-align: center;
+    margin: 10px 0;
+    }
+.recommendproperty_slide > div > div{
+        border-radius: 10px 10px 0 0;
+        }
+
+
+        .recommendimage-prev, .recommendimage-next{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+            width: 30px;
+            height: 30px;
+            background-color: rgba(0, 0, 0, 0.5); 
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+          }
+          
+          .recommendimage-prev{
+              left:25px !important;
+          }
+          .recommendimage-next{
+              right:25px !important;
+          }
+          .recommendimage-next,.recommendimage-prev{
+              background-color: #fcfcfc;
+              position: absolute;
+          }
+          
+            .recommendimage-prev::after, .swiper-rtl .recommendimage-next::after, .recommendimage-next::after, .swiper-rtl .recommendimage-prev::after {
+                  padding: 8px 11px;
+                  border: 1px solid rgb(221, 221, 221);
+                  border-radius: 50%;
+                  font-size: 10px !important;
+                  font-weight: 700 !important;
+                  background-color: #fcfcfc;
+                  }

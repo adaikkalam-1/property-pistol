@@ -1,0 +1,44 @@
+/* Properties in Chennai For Sale  css*/
+.property-heading {
+  padding-top: 41px;
+}
+.property-heading h2 {
+  text-align: center !important;
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.property-container {
+  background: #f2f6fc;
+}
+.localities-content {
+  margin: 0 15px;
+  padding-bottom: 40px;
+  width: 1200px;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.locality-center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.locality-item {
+  font-size: 12px;
+  padding: 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.property-content {
+  width: 1220px;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+@media (max-width: 554px) {
+  .property-heading h2 {
+    font-size: 16px;
+  }
+}
